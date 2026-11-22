@@ -1,0 +1,48 @@
+{
+  "nested_outer": [
+    {
+      "year": 1999,
+      "steps": 64,
+      "lr": 0.001,
+      "c": 0.8811145732289005,
+      "n": 2664,
+      "deaths": 588
+    },
+    {
+      "year": 2001,
+      "steps": 64,
+      "lr": 0.001,
+      "c": 0.8706552025737705,
+      "n": 3105,
+      "deaths": 614
+    },
+    {
+      "year": 2003,
+      "steps": 64,
+      "lr": 0.001,
+      "c": 0.8777590244703602,
+      "n": 4246,
+      "deaths": 1180
+    },
+    {
+      "year": 2005,
+      "steps": 64,
+      "lr": 0.001,
+      "c": 0.8851093616944693,
+      "n": 4154,
+      "deaths": 873
+    },
+    {
+      "year": 2007,
+      "steps": 64,
+      "lr": 0.001,
+      "c": 0.8766187007789791,
+      "n": 5257,
+      "deaths": 947
+    }
+  ],
+  "nested_macro_c": 0.878251372549296,
+  "final_lr": 0.001,
+  "final_steps": 64,
+  "rule": "mean cycle Harrell C; ties prefer fewer steps then lower lr"
+}

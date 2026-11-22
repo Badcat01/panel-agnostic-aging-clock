@@ -1,0 +1,39 @@
+{
+  "score_center": 50,
+  "points_per_sd": 10,
+  "development_n": 19426,
+  "development_roster_sha256": "a92bcb5e2b9e7ed0a7560d7283d6bcb83f266cdd171ac9770de9e20d9b2b2989",
+  "model_freeze_sha256": "a472b93f36c8d49de51d2c55c720aa801fa0e08d65c71575986e3bd995b20ae1",
+  "panels": {
+    "full": {
+      "n_with_measurements": 19426,
+      "accel_mean_years": -2.2683772230867615e-07,
+      "accel_sd_years": 8.647659566155609
+    },
+    "liver": {
+      "n_with_measurements": 19426,
+      "accel_mean_years": -2.0793427302938386e-07,
+      "accel_sd_years": 5.47180132504332
+    },
+    "kidney": {
+      "n_with_measurements": 19426,
+      "accel_mean_years": -2.2296033317221132e-07,
+      "accel_sd_years": 5.698910845425852
+    },
+    "metabolic": {
+      "n_with_measurements": 19426,
+      "accel_mean_years": -2.122325396526624e-07,
+      "accel_sd_years": 4.5482923053000714
+    },
+    "immune_heme": {
+      "n_with_measurements": 19426,
+      "accel_mean_years": -2.1240686547301432e-07,
+      "accel_sd_years": 6.337713561348377
+    },
+    "cardiovascular": {
+      "n_with_measurements": 18742,
+      "accel_mean_years": -2.1939356635051047e-07,
+      "accel_sd_years": 3.975354297168088
+    }
+  }
+}

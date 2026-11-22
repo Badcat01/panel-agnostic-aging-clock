@@ -1,0 +1,481 @@
+{
+  "features": [
+    "albumin",
+    "alp",
+    "ast",
+    "alt",
+    "ggt",
+    "bilirubin",
+    "total_protein",
+    "globulin",
+    "ldh",
+    "creatinine",
+    "bun",
+    "uric_acid",
+    "uacr",
+    "potassium",
+    "sodium",
+    "chloride",
+    "bicarbonate",
+    "phosphorus",
+    "calcium",
+    "glucose",
+    "hba1c",
+    "triglycerides",
+    "cholesterol",
+    "hdl",
+    "bmi",
+    "waist",
+    "wbc",
+    "lymph_pct",
+    "mono_pct",
+    "neut_pct",
+    "eos_pct",
+    "crp",
+    "rbc",
+    "hgb",
+    "mcv",
+    "mch",
+    "rdw",
+    "platelets",
+    "mpv",
+    "iron",
+    "sbp",
+    "dbp",
+    "pulse"
+  ],
+  "log_features": [
+    "alp",
+    "ast",
+    "alt",
+    "ggt",
+    "bilirubin",
+    "ldh",
+    "uacr",
+    "triglycerides",
+    "crp",
+    "creatinine",
+    "glucose",
+    "wbc",
+    "bun"
+  ],
+  "groups": {
+    "liver": [
+      "albumin",
+      "alp",
+      "ast",
+      "alt",
+      "ggt",
+      "bilirubin",
+      "total_protein",
+      "globulin",
+      "ldh"
+    ],
+    "kidney": [
+      "creatinine",
+      "bun",
+      "uric_acid",
+      "uacr",
+      "potassium",
+      "sodium",
+      "chloride",
+      "bicarbonate",
+      "phosphorus",
+      "calcium"
+    ],
+    "metabolic": [
+      "glucose",
+      "hba1c",
+      "triglycerides",
+      "cholesterol",
+      "hdl",
+      "bmi",
+      "waist"
+    ],
+    "immune_heme": [
+      "wbc",
+      "lymph_pct",
+      "mono_pct",
+      "neut_pct",
+      "eos_pct",
+      "crp",
+      "rbc",
+      "hgb",
+      "mcv",
+      "mch",
+      "rdw",
+      "platelets",
+      "mpv",
+      "iron"
+    ],
+    "cardiovascular": [
+      "sbp",
+      "dbp",
+      "pulse"
+    ]
+  },
+  "mean": [
+    4.264454854318954,
+    4.230319349817518,
+    3.176595993904127,
+    3.1227253471635543,
+    3.1470697461631163,
+    -0.389555429383088,
+    7.273600659725773,
+    3.0103855272652362,
+    4.876948851214834,
+    -0.13864038617515517,
+    2.5225496309584514,
+    5.45288332818455,
+    2.1807699712756703,
+    4.015040160642554,
+    139.12979972197905,
+    103.39694161260425,
+    24.545318313352624,
+    3.7247528830313046,
+    9.461655683690303,
+    4.564062197575448,
+    5.60995771452145,
+    4.796801117634783,
+    198.63491736600938,
+    52.37545089147686,
+    28.52646054428916,
+    97.53461291014234,
+    1.937651339535821,
+    30.300258558278948,
+    7.927665735856876,
+    58.241115937532946,
+    2.8863481228669574,
+    -1.6085437105045841,
+    4.726823735629179,
+    14.354425942155865,
+    89.6399907202159,
+    30.44027426921657,
+    12.824410991390332,
+    268.9503995463216,
+    8.100685673042342,
+    86.08302858614474,
+    124.81214567635462,
+    71.05474656706129,
+    72.27606445416711
+  ],
+  "std": [
+    0.34185699832735505,
+    0.3139762872228263,
+    0.3346500463429643,
+    0.47331811181268185,
+    0.6619691635109276,
+    0.3879976060829578,
+    0.4911210119245447,
+    0.46040688760300824,
+    0.21208164663538745,
+    0.27477806531011173,
+    0.3876304138862453,
+    1.434768987666621,
+    1.17923924579087,
+    0.3441928609632492,
+    2.4053891618451804,
+    2.9398464236387842,
+    2.313189962621484,
+    0.5611226351143562,
+    0.38055103253023725,
+    0.24389826406860154,
+    1.0087510235300718,
+    0.6175519681470086,
+    42.31824924164284,
+    15.775905007631922,
+    6.454047576003934,
+    15.553643191210911,
+    0.28756930591701074,
+    8.494330001442611,
+    2.339615001897446,
+    9.448447501913467,
+    2.1542833731570514,
+    1.2777003649834895,
+    0.5086637013812936,
+    1.5432586877908987,
+    5.64211475594731,
+    2.254030529200225,
+    1.2148283707946559,
+    69.54907500653879,
+    0.8916034642709241,
+    36.30446279236439,
+    19.70987606450887,
+    11.8987454591211,
+    12.324325308836368
+  ],
+  "age_mean": 48.730567280963655,
+  "age_std": 18.3928470640679,
+  "model_kwargs": {
+    "d": 64,
+    "L": 3,
+    "heads": 4,
+    "drop": 0.1
+  },
+  "models": [
+    "ftmask_seed0.pt",
+    "ftmask_seed1.pt",
+    "ftmask_seed2.pt",
+    "ftmask_seed3.pt",
+    "ftmask_seed4.pt"
+  ],
+  "calibration": {
+    "full": {
+      "lp_mean": -1.5250552350219224,
+      "scale_years": 10.133496045560875,
+      "age_mean": 48.730567280963655,
+      "residual_intercept": 0.6006530976427598,
+      "residual_slope": 0.987673997427947,
+      "n": 19426
+    },
+    "liver": {
+      "lp_mean": -1.4450034575469797,
+      "scale_years": 9.701444376628869,
+      "age_mean": 48.730567280963655,
+      "residual_intercept": 3.524531300251349,
+      "residual_slope": 0.9276730911025491,
+      "n": 19426
+    },
+    "kidney": {
+      "lp_mean": -1.3719321174897774,
+      "scale_years": 9.71219629810478,
+      "age_mean": 48.730567280963655,
+      "residual_intercept": 4.087063383618161,
+      "residual_slope": 0.916129369887004,
+      "n": 19426
+    },
+    "metabolic": {
+      "lp_mean": -1.4111069099101938,
+      "scale_years": 9.75002415224794,
+      "age_mean": 48.730567280963655,
+      "residual_intercept": 3.429113195999141,
+      "residual_slope": 0.9296311660763545,
+      "n": 19426
+    },
+    "immune_heme": {
+      "lp_mean": -1.3861053545565893,
+      "scale_years": 9.981891279665938,
+      "age_mean": 48.730567280963655,
+      "residual_intercept": 3.108220280991422,
+      "residual_slope": 0.9362162097750573,
+      "n": 19426
+    },
+    "cardiovascular": {
+      "lp_mean": -1.2984642152157362,
+      "scale_years": 9.830931905541682,
+      "age_mean": 48.75626934158574,
+      "residual_intercept": 4.860920874413028,
+      "residual_slope": 0.9003016239746022,
+      "n": 18742
+    }
+  },
+  "age_cox_slope": 0.09089425903599133,
+  "n_train": 19426,
+  "deaths": 4202,
+  "harmonization": {
+    "sources": {
+      "creatinine_1999": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/LAB18.htm",
+      "early_field_aliases": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/L40_B.htm",
+      "creatinine_2005": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BIOPRO_D.htm",
+      "conventional_crp": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CRP_F.htm",
+      "hscrp_2015": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/HSCRP_I.htm",
+      "hscrp_bridge": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HSCRP_J.htm",
+      "dnam": "https://wwwn.cdc.gov/nchs/nhanes/dnam/"
+    },
+    "analytic_rows_before_panel_filter": 50808,
+    "raw_units_and_missingness_checks": {
+      "1999": {
+        "creatinine": {
+          "column": "LBXSCR",
+          "unit": "mg/dL",
+          "observed": 3878
+        },
+        "bilirubin": {
+          "column": "LBXSTB",
+          "unit": "mg/dL",
+          "observed": 3878
+        },
+        "phosphorus": {
+          "column": "LBXSPH",
+          "unit": "mg/dL",
+          "observed": 3878
+        },
+        "alp": {
+          "column": "LBXSAPSI",
+          "unit": "U/L",
+          "observed": 3878
+        },
+        "ldh": {
+          "column": "LBXSLDSI",
+          "unit": "U/L",
+          "observed": 3878
+        },
+        "albumin": {
+          "column": "LBXSAL",
+          "unit": "g/dL",
+          "observed": 3878
+        },
+        "glucose": {
+          "column": "LBXSGL",
+          "unit": "mg/dL",
+          "observed": 3878
+        }
+      },
+      "2001": {
+        "creatinine": {
+          "column": "LBDSCR",
+          "unit": "mg/dL",
+          "observed": 4416
+        },
+        "bilirubin": {
+          "column": "LBDSTB",
+          "unit": "mg/dL",
+          "observed": 4416
+        },
+        "phosphorus": {
+          "column": "LBDSPH",
+          "unit": "mg/dL",
+          "observed": 4416
+        },
+        "alp": {
+          "column": "LBDSAPSI",
+          "unit": "U/L",
+          "observed": 4416
+        },
+        "ldh": {
+          "column": "LBDSLDSI",
+          "unit": "U/L",
+          "observed": 4415
+        },
+        "albumin": {
+          "column": "LBXSAL",
+          "unit": "g/dL",
+          "observed": 4416
+        },
+        "glucose": {
+          "column": "LBXSGL",
+          "unit": "mg/dL",
+          "observed": 4416
+        }
+      },
+      "2003": {
+        "creatinine": {
+          "column": "LBXSCR",
+          "unit": "mg/dL",
+          "observed": 4246
+        },
+        "bilirubin": {
+          "column": "LBXSTB",
+          "unit": "mg/dL",
+          "observed": 4242
+        },
+        "phosphorus": {
+          "column": "LBXSPH",
+          "unit": "mg/dL",
+          "observed": 4245
+        },
+        "alp": {
+          "column": "LBXSAPSI",
+          "unit": "U/L",
+          "observed": 4246
+        },
+        "ldh": {
+          "column": "LBXSLDSI",
+          "unit": "U/L",
+          "observed": 4241
+        },
+        "albumin": {
+          "column": "LBXSAL",
+          "unit": "g/dL",
+          "observed": 4246
+        },
+        "glucose": {
+          "column": "LBXSGL",
+          "unit": "mg/dL",
+          "observed": 4246
+        }
+      },
+      "2005": {
+        "creatinine": {
+          "column": "LBXSCR",
+          "unit": "mg/dL",
+          "observed": 4154
+        },
+        "bilirubin": {
+          "column": "LBXSTB",
+          "unit": "mg/dL",
+          "observed": 4153
+        },
+        "phosphorus": {
+          "column": "LBXSPH",
+          "unit": "mg/dL",
+          "observed": 4153
+        },
+        "alp": {
+          "column": "LBXSAPSI",
+          "unit": "U/L",
+          "observed": 4154
+        },
+        "ldh": {
+          "column": "LBXSLDSI",
+          "unit": "U/L",
+          "observed": 4082
+        },
+        "albumin": {
+          "column": "LBXSAL",
+          "unit": "g/dL",
+          "observed": 4154
+        },
+        "glucose": {
+          "column": "LBXSGL",
+          "unit": "mg/dL",
+          "observed": 4154
+        }
+      }
+    },
+    "creatinine_calibration": {
+      "1999": {
+        "unit": "mg/dL",
+        "slope": 1.013,
+        "offset": 0.147,
+        "n": 3878
+      },
+      "2005": {
+        "unit": "mg/dL",
+        "slope": 0.978,
+        "offset": -0.016,
+        "n": 4154
+      }
+    },
+    "crp_calibration": {
+      "final_unit": "mg/dL",
+      "reference_for_2015_and_2017": "2017-2018 Roche Cobas 6000",
+      "formula_2015_hscrp_in_mg_L": "(0.8695*x + 0.2954) for x <= 23",
+      "n_bridged": 4938,
+      "n_above_range_retained": 122,
+      "remaining_limit": "No validated 1999-2010 to 2015-2018 assay bridge identified in the cited CDC codebooks. Older CRP is retained in mg/dL; complete cross-era equivalence is unverified."
+    },
+    "sas_zero_decoding": {
+      "eos_pct": 52,
+      "bilirubin": 19,
+      "dbp_mean_changed": 591,
+      "dbp_all_zero_to_missing": 236,
+      "dbp_summary": "Mean of all available nonzero readings per the project preprocessing script."
+    },
+    "dnam": {
+      "raw_participant_rows": 4449,
+      "any_biomarker_measured": 2532,
+      "no_measurement_zero_weight": 1917,
+      "verified_against_processed": true,
+      "sorted_id_sha256": "55a287f14016a9c5928193affe56eba3fe9b71aa8c55a3b9ae89e593405215d7"
+    },
+    "cohort_counts": {
+      "source": 50808,
+      "eligible": 47565,
+      "development": 19426,
+      "temporal": 25614,
+      "eligible_dnam": 2525
+    }
+  },
+  "unit_reference": "02_build_dataset.py and nhanes_calibration.py"
+}

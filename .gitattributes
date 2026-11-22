@@ -1,0 +1,4 @@
+# Preserve the original bytes of the archived scripts and analysis protocols.
+* -text
+*.pt binary
+*.png binary

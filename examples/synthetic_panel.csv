@@ -1,0 +1,4 @@
+ID,age,albumin,creatinine,uacr,glucose,wbc,sbp
+synthetic-A,60,4.2,1.0,12,96,6.4,118
+synthetic-B,71,,1.15,,,,
+synthetic-C,55,,,,,,

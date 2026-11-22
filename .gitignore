@@ -1,0 +1,37 @@
+# Study code writes private and intermediate files throughout the analysis tree.
+# Track source and the named release assets; leave new tables and weights local.
+*
+!*/
+!*.py
+!*.R
+!*.sql
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements*.txt
+!/docs/*.md
+!/docs/input_dictionary.csv
+!/examples/synthetic_panel.csv
+!/figures/README.md
+!/figures/assets/ftmask_embedded.png
+!/external_validation/验证方案.md
+!/external_validation/nhanes_reference.json
+!/external_validation/nhanes3_organ/organ_score_reference.json
+!/external_validation/mimic_iv/incident_v3_1/分析方案.md
+!/external_validation/supplement_v2/models/panel_definitions.json
+!/runs/nhanes_gpu_20261121/input_hashes.json
+!/runs/nhanes_gpu_20261121/model_freeze.json
+!/runs/nhanes_gpu_20261121/protocol.json
+!/runs/nhanes_gpu_20261121/cross_validation.json
+!/runs/nhanes_gpu_20261121/temporal_metrics.json
+!/runs/nhanes_gpu_20261121/SHA256SUMS
+!/runs/nhanes_gpu_20261121/bundle/clock_bundle.json
+!/runs/nhanes_gpu_20261121/bundle/ftmask_seed[0-4].pt
+**/__pycache__/
+**/.venv/
+**/R_lib/
+**/resources/
+**/runtime/
+**/private/
+/data/
+/outputs/

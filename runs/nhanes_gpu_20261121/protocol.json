@@ -1,0 +1,58 @@
+{
+  "project_scripts": {
+    "train_clock_gpu.py": "8f8dbecc86132f9f6db15b3855ada7d72a5e487c68a5d152de2c2e251d76f76c",
+    "clock_network.py": "b3df63a7566114df3563d834f4a32331fdf895925034f826afdd30935e36481e",
+    "nhanes_calibration.py": "23a9ddcd417d06074c9492a15143b9fd0c9fad6a05fc2771779ee5e624cb9083",
+    "score_clock.py": "f1458f856dc8a5979f019804e6fddc95556ec027f2e574ab661b930e7f36d167"
+  },
+  "data": {
+    "dnmepi.csv.gz": "6813cbf1373c8e231f447c776a7014fd5dcf9c4825fffbaa304f885abe99b755",
+    "nhanes_9918.csv.gz": "9c1f911a0b8ce69929dd1c7f92a89453e4e5b570094bf869365e7a9aec8b72fb"
+  },
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "lifelines": "0.30.0",
+  "python": "3.10.19",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "lr_grid": [
+    0.0005,
+    0.001
+  ],
+  "steps_grid": [
+    32,
+    64,
+    128
+  ],
+  "cycles": [
+    1999,
+    2001,
+    2003,
+    2005,
+    2007
+  ],
+  "model": {
+    "d": 64,
+    "L": 3,
+    "heads": 4,
+    "drop": 0.1
+  },
+  "microbatch": 768,
+  "masking": [
+    0.4,
+    0.35,
+    0.25
+  ],
+  "objective": "full-cohort Breslow partial likelihood with exact tied risk sets; BF16 transformer, FP64 loss",
+  "inner": "leave two development cycles out; score each inner cycle separately",
+  "outer": "leave one development cycle out",
+  "train_ids_sha256": "9f549b688778dda047d4a9fa25d98e3e26d732afbec1c481332965f8e0e30782"
+}

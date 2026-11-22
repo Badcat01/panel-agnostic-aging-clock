@@ -1,0 +1,40 @@
+{
+  "n": 25614,
+  "deaths": 1977,
+  "n_scored": 25614,
+  "deaths_scored": 1977,
+  "n_train_baselines": 19426,
+  "deaths_train_baselines": 4202,
+  "C_DL": 0.8747045454154634,
+  "C_age_sex": 0.831496589801383,
+  "C_ridge_cox": 0.869639249663208,
+  "delta_C_DL_vs_ridge_cox": {
+    "estimate": 0.005065295752255339,
+    "ci95_percentile": [
+      0.003023095374941759,
+      0.007016936032440312
+    ],
+    "bootstrap_seed": 413,
+    "replicates_requested": 300,
+    "replicates_valid": 300
+  },
+  "phenoage_complete_cases": {
+    "n": 15423,
+    "deaths": 1061,
+    "C_PhenoAge": 0.8582208634641416,
+    "C_DL": 0.8785746662982186,
+    "C_ridge_cox": 0.8755606155939015
+  },
+  "full_accel_adjusted_age_sex": {
+    "hr_per_holdout_sd": 2.319102164755241,
+    "ci95": [
+      2.2257922971729154,
+      2.416323777112355
+    ],
+    "p": 0.0,
+    "sd_years": 8.95903750083936
+  },
+  "model_freeze_sha256": "a472b93f36c8d49de51d2c55c720aa801fa0e08d65c71575986e3bd995b20ae1",
+  "development_ids_sha256": "9f549b688778dda047d4a9fa25d98e3e26d732afbec1c481332965f8e0e30782",
+  "predictions_sha256": "e0817306f7ace4c16a6ba37d4b0a08f62bc7e9d264a84991bcd101c31590beae"
+}

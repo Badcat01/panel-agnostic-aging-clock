@@ -1,0 +1,44 @@
+variable,measure,system,unit,nhanes_field
+albumin,Albumin,liver,g/dL,LBXSAL
+alp,Alkaline phosphatase,liver,U/L,LBXSAPSI
+ast,Aspartate aminotransferase,liver,U/L,LBXSASSI
+alt,Alanine aminotransferase,liver,U/L,LBXSATSI
+ggt,γ-Glutamyltransferase,liver,U/L,LBXSGTSI
+bilirubin,Total bilirubin,liver,mg/dL,LBXSTB
+total_protein,Total protein,liver,g/dL,LBXSTP
+globulin,Globulin,liver,g/dL,LBXSGB
+ldh,Lactate dehydrogenase,liver,U/L,LBXSLDSI
+creatinine,Creatinine,kidney,mg/dL,LBXSCR
+bun,Blood urea nitrogen,kidney,mg/dL,LBXSBU
+uric_acid,Uric acid,kidney,mg/dL,LBXSUA
+uacr,Urinary albumin-to-creatinine ratio,kidney,mg/g creatinine,"URXUMA, URXUCR"
+potassium,Potassium,kidney,mmol/L,LBXSKSI
+sodium,Sodium,kidney,mmol/L,LBXSNASI
+chloride,Chloride,kidney,mmol/L,LBXSCLSI
+bicarbonate,Bicarbonate,kidney,mmol/L,LBXSC3SI
+phosphorus,Phosphorus,kidney,mg/dL,LBXSPH
+calcium,Calcium,kidney,mg/dL,LBXSCA
+glucose,Glucose,metabolic,mg/dL,LBXSGL
+hba1c,HbA1c,metabolic,%,LBXGH
+triglycerides,Triglycerides,metabolic,mg/dL,LBXSTR
+cholesterol,Total cholesterol,metabolic,mg/dL,LBXSCH
+hdl,HDL cholesterol,metabolic,mg/dL,LBDHDD
+bmi,Body mass index,metabolic,kg/m²,BMXBMI
+waist,Waist circumference,metabolic,cm,BMXWAIST
+wbc,White blood cells,immune/blood,10⁹/L,LBXWBCSI
+lymph_pct,Lymphocytes,immune/blood,%,LBXLYPCT
+mono_pct,Monocytes,immune/blood,%,LBXMOPCT
+neut_pct,Neutrophils,immune/blood,%,LBXNEPCT
+eos_pct,Eosinophils,immune/blood,%,LBXEOPCT
+crp,C-reactive protein,immune/blood,mg/dL,LBXCRP or LBXHSCRP
+rbc,Red blood cells,immune/blood,10¹²/L,LBXRBCSI
+hgb,Haemoglobin,immune/blood,g/dL,LBXHGB
+mcv,Mean corpuscular volume,immune/blood,fL,LBXMCVSI
+mch,Mean corpuscular haemoglobin,immune/blood,pg,LBXMCHSI
+rdw,Red-cell distribution width,immune/blood,%,LBXRDW
+platelets,Platelets,immune/blood,10⁹/L,LBXPLTSI
+mpv,Mean platelet volume,immune/blood,fL,LBXMPSI
+iron,Serum iron,immune/blood,µg/dL,LBXSIR
+sbp,Systolic blood pressure,cardiovascular,mmHg,BPXSY1 to BPXSY4
+dbp,Diastolic blood pressure,cardiovascular,mmHg,BPXDI1 to BPXDI4
+pulse,Pulse rate,cardiovascular,beats/min,BPXPLS
